@@ -10,6 +10,7 @@ than 5 drafts should be sent per day.
 ```
 
 * Kiro landing page: https://kiro.dev
+* Kiro follows the pattern of an "Autonomous Agent" -> https://www.anthropic.com/engineering/building-effective-agents
 * MCP servers used: https://github.com/awslabs/mcp/tree/main/src
 * What's new with AWS: https://aws.amazon.com/new/
 * 156 news on Amazon Bedrock in 2025: https://aws.amazon.com/new/?ams%23article-feed%23pattern-data--111430994.filter=%257B%2522search%2522%253A%2522bedrock%2522%252C%2522filters%2522%253A%255B%257B%2522id%2522%253A%2522whats-new-v2%2523year.or%2522%252C%2522value%2522%253A%255B%25222025%2522%255D%257D%255D%257D
