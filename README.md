@@ -3,7 +3,10 @@ My talk about Kiro - the IDE for AI powered spec-driven design
 
 Kiro prompt for my project:
 ```
-I need an app that drafts LinkedIn posts based on content from the "What's new on AWS" RSS feed available at https://aws.amazon.com/about-aws/whats-new/recent/feed/. The draft should be sent as an email via an SNS topic. To have a daily selection, the LinkedIn content topics should be configurable via a keyword list, and not more than 5 drafts should be sent per day.
+I need an app that drafts LinkedIn posts based on content from the "What's new on AWS" RSS feed available at
+https://aws.amazon.com/about-aws/whats-new/recent/feed/. The draft should be sent as an email via an SNS topic.
+To have a daily selection, the LinkedIn content topics should be configurable via a keyword list, and not more
+than 5 drafts should be sent per day.
 ```
 
 * Kiro landing page: https://kiro.dev
