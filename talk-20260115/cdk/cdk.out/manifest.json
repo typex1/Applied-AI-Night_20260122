@@ -1,0 +1,144 @@
+{
+  "version": "41.0.0",
+  "artifacts": {
+    "LinkedInPostDrafterStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "LinkedInPostDrafterStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "LinkedInPostDrafterStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LinkedInPostDrafterStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/473eebb9a4274803946312630ee11aefa1d8df405687712771d3f93e1f255ff8.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "LinkedInPostDrafterStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "LinkedInPostDrafterStack.assets"
+      ],
+      "metadata": {
+        "/LinkedInPostDrafterStack/CounterTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CounterTableFE2C0268"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDraftsTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDraftsTopic4D527CAE"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDrafterFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDrafterFunctionServiceRole3F78DC4D"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDrafterFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDrafterFunctionServiceRoleDefaultPolicy405E152D"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDrafterFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDrafterFunction4C30C439"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDrafterFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDrafterFunctionLogRetention2E1E091C"
+          }
+        ],
+        "/LinkedInPostDrafterStack/PostDrafterFunction/Invoke1f--BIBwkGKTIwSRmFV8O1yjU9AK+dA1Znl7HToNrxfA=": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDrafterFunctionInvoke1fBIBwkGKTIwSRmFV8O1yjU9AKdA1Znl7HToNrxfAE292A19B"
+          }
+        ],
+        "/LinkedInPostDrafterStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/LinkedInPostDrafterStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/LinkedInPostDrafterStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/LinkedInPostDrafterStack/DailySchedule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DailySchedule68BF5767"
+          }
+        ],
+        "/LinkedInPostDrafterStack/DailySchedule/AllowEventRuleLinkedInPostDrafterStackPostDrafterFunction42471B9B": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DailyScheduleAllowEventRuleLinkedInPostDrafterStackPostDrafterFunction42471B9B1CCA7923"
+          }
+        ],
+        "/LinkedInPostDrafterStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/LinkedInPostDrafterStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/LinkedInPostDrafterStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/LinkedInPostDrafterStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "LinkedInPostDrafterStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  },
+  "minimumCliVersion": "2.1005.0"
+}
